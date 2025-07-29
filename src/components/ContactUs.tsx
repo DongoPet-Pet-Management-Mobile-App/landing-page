@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Send, MessageCircle } from 'lucide-react';
+import { Mail, Send, MessageCircle } from 'lucide-react';
 
 const ContactUs: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -36,17 +36,6 @@ const ContactUs: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Contact Information */}
           <div className="space-y-8 animate-fade-in-left">
-            <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 hover:scale-105 transition-transform duration-300">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center animate-pulse">
-                  <Phone className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white">Phone</h3>
-                  <p className="text-white/80">+1 (904) 614-4704</p>
-                </div>
-              </div>
-            </div>
 
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 hover:scale-105 transition-transform duration-300">
               <div className="flex items-center gap-4 mb-6">
@@ -55,22 +44,7 @@ const ContactUs: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Email</h3>
-                  <p className="text-white/80">support@dongopet.com</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 hover:scale-105 transition-transform duration-300">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center animate-pulse animation-delay-400">
-                  <MapPin className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white">Address</h3>
-                  <p className="text-white/80">
-                    131 Continental Dr Suite 305<br />
-                    Newark, DE, 19713 US
-                  </p>
+                  <p className="text-white/80">dongo@dongopet.com</p>
                 </div>
               </div>
             </div>

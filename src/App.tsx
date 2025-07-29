@@ -31,7 +31,7 @@ function App() {
       <footer className="relative z-10 bg-black/30 backdrop-blur-lg border-t border-white/10 py-8">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p className="text-white/60">
-            © 2024 DongoPet. Made with ❤️ for pet lovers everywhere.
+            © 2025 Lavoro Group LLC. All rights reserved.
           </p>
         </div>
       </footer>

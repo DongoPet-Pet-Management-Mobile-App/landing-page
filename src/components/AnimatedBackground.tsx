@@ -3,17 +3,22 @@ import React from 'react';
 const AnimatedBackground: React.FC = () => {
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden">
-      {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900" />
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/background.png)',
+        }}
+      />
       
-      {/* Overlay for depth */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/20" />
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/20" />
       
-      {/* Falling Paw Prints */}
-      {Array.from({ length: 30 }).map((_, i) => (
+      {/* Falling Paw Prints - darker for visibility */}
+      {Array.from({ length: 20 }).map((_, i) => (
         <div
           key={i}
-          className="absolute text-orange-400/30 text-2xl"
+          className="absolute text-orange-600/40 text-2xl"
           style={{
             left: `${Math.random() * 100}%`,
             top: `-50px`,
@@ -28,11 +33,11 @@ const AnimatedBackground: React.FC = () => {
         </div>
       ))}
       
-      {/* Additional floating elements */}
-      {Array.from({ length: 25 }).map((_, i) => (
+      {/* Additional floating elements - darker */}
+      {Array.from({ length: 15 }).map((_, i) => (
         <div
           key={`dot-${i}`}
-          className="absolute w-3 h-3 bg-orange-400/20 rounded-full animate-pulse"
+          className="absolute w-3 h-3 bg-orange-600/30 rounded-full animate-pulse"
           style={{
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
@@ -41,11 +46,11 @@ const AnimatedBackground: React.FC = () => {
         />
       ))}
       
-      {/* Floating hearts */}
-      {Array.from({ length: 15 }).map((_, i) => (
+      {/* Floating hearts - darker */}
+      {Array.from({ length: 10 }).map((_, i) => (
         <div
           key={`heart-${i}`}
-          className="absolute text-orange-400/20 text-lg animate-float"
+          className="absolute text-red-500/30 text-lg animate-float"
           style={{
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
